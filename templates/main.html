@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #008b8b;
+}
+.cen{
+    text-align:center
+    }
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.aligncenter {
+  width: 100%;
+  text-align: center;
+}
+
+.imgUrlText {
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+  margin: 0 auto;
+  display: block;
+  width: 500px;
+}
+label {
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+      }
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="tab">
+<h2>Image scraping and sorting</h2>
+</div>
+ <div class="cen">
+<br><br><br><br><br><br>
+<form action="{{ url_for("i_url")}}" method="post">
+ <label for="URL">Enter url</label><br><br>
+<input type="text" id="URL" name="url" placeholder="URL"><br><br>
+ <button class="center-block" type="submit">search</button>
+</form>
+
+</div>
+</body>
+</html>

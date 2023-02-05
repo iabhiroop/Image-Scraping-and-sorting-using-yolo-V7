@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+</style>
+</head>
+<body>
+    <div>
+        {% for item in images %}
+        <img src="{{url_for('static', filename=item)}}">
+        {% endfor %}
+        <!--
+        <img src="{{url_for('static', filename=img1)}}">
+        <img src="{{url_for('static', filename=img2)}}">
+        <img src="{{url_for('static', filename=img3)}}">
+        <img src="{{url_for('static', filename=img4)}}">
+        <img src="{{url_for('static', filename=img5)}}">
+        <img src="{{url_for('static', filename=img6)}}">
+        
+        <img id="picture" src="data:image/jpeg;base64,{{ img_data1 }}">
+ 
+        <img id="picture" src="data:image/jpeg;base64,{{ img_data2 }}">
+        <img id="picture" src="data:image/jpeg;base64,{{ img_data3 }}">
+        <img id="picture" src="data:image/jpeg;base64,{{ img_data4 }}">
+        <img id="picture" src="data:image/jpeg;base64,{{ img_data5 }}">
+        <img id="picture" src="data:image/jpeg;base64,{{ img_data6 }}">
+-->
+    </div>
+ </body>
+</html>
